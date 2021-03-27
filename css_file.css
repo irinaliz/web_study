@@ -1,0 +1,73 @@
+body {
+    margin: 0px;
+}
+
+h2 {
+    /*
+    border: black solid 5px;
+    border-color: black; 선의 색깔
+    border-style: solid; 선의 종류
+    border-width: 5px; 선의 두께
+    padding: 10px;  콘텐츠와 보더의 간격 
+    margin-left: 20px;  border선이 끝면하고 얼마나 떨어질지 
+    margin-right: 20px;  border선이 끝면하고 얼마나 떨어질지 
+    width: 200px;  블럭형 박스를 내가 원하는 사이즈 폯으로 정하는 방법*/
+
+    border-bottom: solid 1px black;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#test ol {
+    margin: 0px;
+    /* 맨겉부분. 다른 레이아웃과의 간격차이가 0px */
+    width: 80px;
+    /* 콘텐트 또는 블럭 자체의 폯을 80으로 고정함, 다른 속성으로는 height : 높이 값*/
+    padding: 30px;
+    /* 콘텐트와 보더의 전체적인 사이 간격을 조정해줌 */
+    padding-left: 40px;
+    /* 콘텐트와 보더의 왼쪽 사이 간격을 조정해줌 margin-left로도 할 수있지만 패딩이 콘텐트와 가장 가까움. */
+    border-right: solid 1px black;
+    /* ol도 h2와 같은 화면전체를 이용하는 블럭. */
+}
+
+#test {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+div.text {
+    margin: 0px;
+    padding: 30px;
+    /* ol도 h2와 같은 화면전체를 이용하는 블럭. */
+    width: 1000px;
+}
+
+h3 {
+    margin-top: 0px;
+}
+
+div.test_line {
+    margin: 30px;
+
+}
+
+#test ol li {
+    margin-bottom: 20px;
+}
+
+@media(max-width:800px){
+    #test{
+        display: block;
+    }
+    #test ol{
+        border: none;
+    }
+}
